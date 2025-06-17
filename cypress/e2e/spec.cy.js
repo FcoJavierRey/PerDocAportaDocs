@@ -1,5 +1,5 @@
-describe('template spec', () => {
+describe('Página PerDocAportaDocs', () => {
   it('passes', () => {
-    cy.visit('https://example.cypress.io')
+    cy.visit('https://wwwpre.educacion.org/educacion/perdoc/perdocaportadocs/acceso')
   })
 })
