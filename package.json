@@ -1,0 +1,32 @@
+{
+  "name": "perdocaportadocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "limpiar-reporte": "rimraf ./allure-report && rimraf ./allure-results",
+    "ejecutar-pruebas": "cypress run --env allure=true",
+    "generar-reporte": "allure generate allure-results -o allure-report --clean",
+    "abrir-report": "allure open",
+    "test": "npm run limpiar-reporte && npm run ejecutar-pruebas & npm run generar-reporte && npm run abrir-report",
+    "cy:parallel" : "npm run limpiar-reporte && cypress-parallel -s ejecutar-pruebas -t 2 -d ./cypress/e2e/tests; npm run generar-reporte"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FcoJavierRey/PerDocAportaDocs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FcoJavierRey/PerDocAportaDocs/issues"
+  },
+  "homepage": "https://github.com/FcoJavierRey/PerDocAportaDocs#readme",
+  "devDependencies": {
+    "cypress": "^14.4.1"
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.0"
+  }
+}
