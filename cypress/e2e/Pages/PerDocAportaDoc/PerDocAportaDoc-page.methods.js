@@ -34,5 +34,68 @@ export class PerDocAportaDocMethods {
    static clicOnBotonAceptar() {
     PerDocAportaDocElements.BotonAceptar.click();
   }
+
+  static clicOnBotonAñadirDocumento() {
+    PerDocAportaDocElements.BotonAñadirDocumento.click();
+  }
+
+   static clicOnBotonAñadirMerito() {
+    PerDocAportaDocElements.BotonAñadirMerito.click();
+  }
+
+   static verPantaAportacionDocumentos() {
+    PerDocAportaDocElements.PantaAportacionDocumentos.should('exist');
+  }
+
+  static insertConvocatoria(Convocatoria){
+          PerDocAportaDocElements.textboxes.Convocatoria.invoke('val', Convocatoria);
+  }
+
+   static insertActividad(Actividad){
+          PerDocAportaDocElements.textboxes.Actividad.type(Actividad);
+  }
+
+   static insertFuncion(Funcion){
+          PerDocAportaDocElements.textboxes.Funcion.type(Funcion);
+  }
+
+  static insertTipoDocumento(TipoDocumento){
+          PerDocAportaDocElements.textboxes.TipoDocumento.type(TipoDocumento);
+  }
+
+  static insertEntidadOrganizadora(EntidadOrganizadora){
+          PerDocAportaDocElements.textboxes.EntidadOrganizadora.type(EntidadOrganizadora);
+  }
+
+  static insertFechaInicio(FechaInicio){
+          PerDocAportaDocElements.textboxes.FechaInicio.invoke('val', FechaInicio);
+  }
  
+  static insertFechaFin(FechaFin){
+          PerDocAportaDocElements.textboxes.FechaFin.invoke('val', FechaFin);
+  }
+
+  static insertCursoAcademico(CursoAcademico){
+          PerDocAportaDocElements.textboxes.CursoAcademico.invoke('val', CursoAcademico);
+  }
+
+  static insertFechaExpedicion(FechaExpedicion){
+          PerDocAportaDocElements.textboxes.FechaExpedicion.invoke('val', FechaExpedicion);
+  }
+
+   static insertNumeroExpediente(NumeroExpediente){
+          PerDocAportaDocElements.textboxes.NumeroExpediente.invoke('val', NumeroExpediente);
+  }
+
+  static insertTituloActividad(TituloActividad){
+          PerDocAportaDocElements.textboxes.TituloActividad.invoke('val', TituloActividad);
+  }
+
+   static insertSeleccionarArchivoOk(){
+          cy.get('input[type="file"]').selectFile('cypress/fixtures/Adjuntar documentación trabajo.png', { action: 'drag-drop' });
+  }
+
+    static insertSeleccionarArchivoWrong(){
+          cy.get('input[type="file"]').selectFile('cypress/fixtures/&Curriculum incorrecto%.txt', { action: 'drag-drop' });
+  }
 }

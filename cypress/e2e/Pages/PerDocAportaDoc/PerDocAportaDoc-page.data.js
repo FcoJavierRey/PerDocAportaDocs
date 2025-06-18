@@ -12,8 +12,86 @@ static get urlNuevaSolicitud() {
     return "hhttps://wwwpre.educacion.org/educacion/PERDOC/PerDocAportaDocs/Formulario/NuevaSolicitud";
   };
 
+  static get Convocatoriasample() {
+    return {
+      Convocatoria: "PROCEDIMIENTO DE OPOSICIONES 2025 - INSP: Acceso Libre (Opo)",
+    }; 
+  } 
 
+   static get Actividadsample() {
+    return {
+      Actividad: "TÍTULO DE GRADO",
+    }; 
+  } 
+
+   static get Funcionsample() {
+    return {
+      Funcion: "SIN FUNCIÓN DOCENTE",
+    }; 
+  } 
+
+  static get TipoDocumentosample() {
+    return {
+      TipoDocumento: "TÍTULO",
+    }; 
+  } 
  
+    static get EntidadOrganizadorasample() {
+    return {
+      EntidadOrganizadora: "ACADEMIA CANARIA DE CIENCIAS",
+    }; 
+  } 
+
+  static get FechaIniciosample() {
+    return {
+      FechaInicio: "01/06/2020",
+    }; 
+  } 
+
+    static get FechaFinsample() {
+    return {
+      FechaFin: "30/06/2024",
+    }; 
+  } 
+
+    static get CursoAcademicosample() {
+    return {
+      CursoAcademico: "2024",
+    }; 
+  } 
+
+    static get FechaExpedicionsample() {
+    return {
+      FechaExpedicion: "30/06/2025",
+    }; 
+  } 
+
+    static get NumeroExpedientesample() {
+    return {
+      NumeroExpediente: "9999/99",
+    }; 
+  } 
+  
+     static get TituloActividadsample() {
+    return {
+      TituloActividad: "Título de Grado",
+    }; 
+  }
+
+    static get SeleccionarArchivoOk() {
+    return {
+      ArchivoOK: "'cypress/fixtures/Adjuntar documentación trabajo.png'",
+    }; 
+  }
+
+    static get SeleccionarArchivoWrong() {
+    return {
+      ArchivoWrong: "'cypress/fixtures/&Curriculum incorrecto%.txt'",
+    }; 
+  } 
+ 
+ 
+
 static get testSuites() {
     return {
       autenticacion: "PerDocAportaDoc: Autenticación",
