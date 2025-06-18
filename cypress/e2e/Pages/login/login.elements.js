@@ -9,8 +9,9 @@ export class LoginElements {
       },
 
        get NifUsuario() {
-        return cy.get('input#NifUsuario');
-      },
+          return  cy.get('input#NifUsuario');
+    } 
+   
 
     };
   }

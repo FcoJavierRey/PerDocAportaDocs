@@ -18,5 +18,21 @@ export class PerDocAportaDocMethods {
  static clicOnCerrarSesion() {
     PerDocAportaDocElements.Menu.CerrarSesion.click();
   }
+
+  static clicOnBotonEntrar() {
+    PerDocAportaDocElements.BotonEntrar.click();
+  }
+
+ static clicOnAportarDocumentacion() {
+    PerDocAportaDocElements.BotonAportarDocumentacion.click();
+  }
+
+  static verPantaAportarDocumentacion() {
+    PerDocAportaDocElements.PantaAportarDocumentacion.should('exist');
+  }
+
+   static clicOnBotonAceptar() {
+    PerDocAportaDocElements.BotonAceptar.click();
+  }
  
 }

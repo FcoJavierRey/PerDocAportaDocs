@@ -17,7 +17,7 @@ static get urlNuevaSolicitud() {
 static get testSuites() {
     return {
       autenticacion: "PerDocAportaDoc: Autenticación",
-      AportarDocumentacion: "PerDocAportaDoc: Aportar Documentación",
+      AportarDocumentacion: "PerDocAportaDoc: Aportación Documentos",
       };
   }
 
