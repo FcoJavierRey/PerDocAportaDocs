@@ -31,6 +31,10 @@ export class PerDocAportaDocMethods {
     PerDocAportaDocElements.PantaAportarDocumentacion.should('exist');
   }
 
+  static verPantaFormatoIncorrecto() {
+    PerDocAportaDocElements.PantaFormatoIncorrecto.should('exist');
+  }
+
    static clicOnBotonAceptar() {
     PerDocAportaDocElements.BotonAceptar.click();
   }
@@ -47,20 +51,39 @@ export class PerDocAportaDocMethods {
     PerDocAportaDocElements.PantaAportacionDocumentos.should('exist');
   }
 
+   static clicOnCampoConvocatoria() {
+    PerDocAportaDocElements.textboxes.Convocatoria.click();
+  }
   static insertConvocatoria(Convocatoria){
-          PerDocAportaDocElements.textboxes.Convocatoria.invoke('val', Convocatoria);
+    PerDocAportaDocElements.textboxes.Convocatoria.invoke('val', Convocatoria);
+  }
+
+  static clicOnCampoActividad() {
+    PerDocAportaDocElements.textboxes.Actividad.click();
   }
 
    static insertActividad(Actividad){
           PerDocAportaDocElements.textboxes.Actividad.type(Actividad);
   }
 
+  static clicOnCampoFuncion() {
+    PerDocAportaDocElements.textboxes.Funcion.click();
+  }
+
    static insertFuncion(Funcion){
           PerDocAportaDocElements.textboxes.Funcion.type(Funcion);
   }
 
+  static clicOnCampoTipoDocumento() {
+    PerDocAportaDocElements.textboxes.TipoDocumento.click();
+  }
+
   static insertTipoDocumento(TipoDocumento){
           PerDocAportaDocElements.textboxes.TipoDocumento.type(TipoDocumento);
+  }
+
+  static clicOnCampoEntidadOrganizadora() {
+    PerDocAportaDocElements.textboxes.EntidadOrganizadora.click();
   }
 
   static insertEntidadOrganizadora(EntidadOrganizadora){

@@ -82,6 +82,10 @@ export class PerDocAportaDocElements {
         return cy.get('div[role="document"] p');
     }
 
+     static get PantaFormatoIncorrecto() {
+        return cy.get('div[id="divMensajeErrores"] strong');
+    }
+
     static get BotonAceptar() {
         return cy.contains('button', 'Aceptar');
     }
