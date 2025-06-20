@@ -20,7 +20,7 @@ static get urlNuevaSolicitud() {
 
    static get Actividadsample() {
     return {
-      Actividad: "TÍTULO DE GRADO",
+      Actividad: "DIPLOMA DE ESTUDIOS AVANZADOS",
     }; 
   } 
 
@@ -32,7 +32,7 @@ static get urlNuevaSolicitud() {
 
   static get TipoDocumentosample() {
     return {
-      TipoDocumento: "TÍTULO",
+      TipoDocumento: "DIPLOMA",
     }; 
   } 
  
@@ -74,7 +74,7 @@ static get urlNuevaSolicitud() {
   
      static get TituloActividadsample() {
     return {
-      TituloActividad: "Título de Grado",
+      TituloActividad: "Diploma de estudios avanzados",
     }; 
   }
 
@@ -96,6 +96,8 @@ static get testSuites() {
     return {
       autenticacion: "PerDocAportaDoc: Autenticación",
       AportarDocumentacion: "PerDocAportaDoc: Aportación Documentos",
+      AñadirSolicitud: "PerDocAportaDoc: Añadir Solicitud",
+      PresentarDocumentacion: "PerDocAportaDoc: Presentar Documentación",
       };
   }
 

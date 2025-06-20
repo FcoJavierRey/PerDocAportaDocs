@@ -43,6 +43,10 @@ export class PerDocAportaDocMethods {
     PerDocAportaDocElements.BotonAñadirDocumento.click();
   }
 
+   static clicOnBotonGuardarDocumento() {
+    PerDocAportaDocElements.BotonGuardarDocumento.click();
+  }
+
    static clicOnBotonAñadirMerito() {
     PerDocAportaDocElements.BotonAñadirMerito.click();
   }
@@ -51,43 +55,57 @@ export class PerDocAportaDocMethods {
     PerDocAportaDocElements.PantaAportacionDocumentos.should('exist');
   }
 
+  static clicOnSolicitudGuardada() {
+    PerDocAportaDocElements.SolicitudGuardada.click();
+  }
+
+   static verPantaSolicitudGuardada() {
+    PerDocAportaDocElements.BotonAceptarSolicitudGuardada.should('exist');
+  }
+ static clicOnBotonSolicitudGuardada() {
+    PerDocAportaDocElements.BotonAceptarSolicitudGuardada.click();
+  }
    static clicOnCampoConvocatoria() {
     PerDocAportaDocElements.textboxes.Convocatoria.click();
   }
-  static insertConvocatoria(Convocatoria){
-    PerDocAportaDocElements.textboxes.Convocatoria.invoke('val', Convocatoria);
+  static escribirConvocatoria(Convocatoria){
+    PerDocAportaDocElements.textboxes.Convocatoria.type(Convocatoria).type("{enter}");
   }
 
+ 
   static clicOnCampoActividad() {
     PerDocAportaDocElements.textboxes.Actividad.click();
   }
 
-   static insertActividad(Actividad){
-          PerDocAportaDocElements.textboxes.Actividad.type(Actividad);
+   static escribirActividad(Actividad){
+          PerDocAportaDocElements.textboxes.ActividadBox.type(Actividad).type("{enter}");
   }
-
+ 
   static clicOnCampoFuncion() {
     PerDocAportaDocElements.textboxes.Funcion.click();
   }
 
-   static insertFuncion(Funcion){
-          PerDocAportaDocElements.textboxes.Funcion.type(Funcion);
+   static escribirFuncion(Funcion){
+          PerDocAportaDocElements.textboxes.FuncionBox.type(Funcion).type("{enter}");
   }
 
   static clicOnCampoTipoDocumento() {
     PerDocAportaDocElements.textboxes.TipoDocumento.click();
   }
 
-  static insertTipoDocumento(TipoDocumento){
-          PerDocAportaDocElements.textboxes.TipoDocumento.type(TipoDocumento);
+  static escribirTipoDocumento(TipoDocumento){
+          PerDocAportaDocElements.textboxes.TipoDocumentoBox.type(TipoDocumento).type("{enter}");
   }
 
   static clicOnCampoEntidadOrganizadora() {
     PerDocAportaDocElements.textboxes.EntidadOrganizadora.click();
   }
 
-  static insertEntidadOrganizadora(EntidadOrganizadora){
-          PerDocAportaDocElements.textboxes.EntidadOrganizadora.type(EntidadOrganizadora);
+  static clicOnCampoObservaciones() {
+    PerDocAportaDocElements.textboxes.Observaciones.click();
+  }
+  static escribirEntidadOrganizadora(EntidadOrganizadora){
+          PerDocAportaDocElements.textboxes.EntidadOrganizadoraBox.type(EntidadOrganizadora).type("{enter}");
   }
 
   static insertFechaInicio(FechaInicio){
