@@ -10,7 +10,14 @@ export class LoginElements {
 
        get NifUsuario() {
           return  cy.get('input#NifUsuario');
-    } 
+    }, 
+
+     get NifSupervisor() {
+          return  cy.get('input#NifSupervisor');
+    },
+    get PasswordSupervisor() {
+        return cy.get('input#PasswordSupervisor');
+      }, 
    
 
     };

@@ -22,6 +22,9 @@ describe(PerDocAportaDocData.testSuites.PresentarDocumentacion, () => {
     Logger.stepNumber(3);
     Logger.step("Aportar Nueva Documentación");
     PerDocAportaDocMethods.navigatePerDocAportaDoc();
+    //LoginMethods.insertNifSupervisor(LoginData.NifSupervisorsample.NifSupervisor)
+    //LoginMethods.insertPasswordSupervisor(LoginData.NifSupervisorsample.PasswordSupervisor)
+
     LoginMethods.insertNifUsuario(LoginData.NifUsuariosample.NifUsuario)
     PerDocAportaDocMethods.clicOnBotonEntrar();
     Logger.verification("Verificar que se muestra la página de Aportar Documentación");

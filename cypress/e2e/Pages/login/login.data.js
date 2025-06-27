@@ -16,6 +16,13 @@ export class LoginData {
     return {
       NifUsuario: "9277099A",
     }; 
+  }
+  
+    static get NifSupervisorsample() {
+    return {
+      NifSupervisor: "32786565L",
+      PasswordSupervisor: "1234",
+    }; 
 
   }
 

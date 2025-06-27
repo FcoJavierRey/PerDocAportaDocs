@@ -15,6 +15,14 @@ export class LoginMethods{
         LoginElements.textboxes.NifUsuario.invoke('val', NifUsuario)
     }
 
+    static insertNifSupervisor(NifSupervisor){
+        LoginElements.textboxes.NifSupervisor.invoke('val', NifSupervisor)
+    }
+
+    static insertPasswordSupervisor(PasswordSupervisor){
+        LoginElements.textboxes.PasswordSupervisor.invoke('val', PasswordSupervisor)
+    }
+
     static clickOnLoginButton(){
         LoginElements.buttons.login.click()
     }
