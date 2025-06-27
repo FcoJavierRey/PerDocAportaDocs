@@ -94,7 +94,11 @@ export class PerDocAportaDocElements {
    }
 
    static get  BotonGenerarPDF() {
-        return  cy.contains('a', 'Generar PDF');
+        return  cy.get('button#btn-generar-pdf');
+    } 
+
+     static get  BotonPresentar() {
+        return  cy.get('button[id="btn-presentar"] div');
     } 
 
     static get  SolicitudGuardada() {

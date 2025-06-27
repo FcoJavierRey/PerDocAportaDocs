@@ -47,6 +47,14 @@ export class PerDocAportaDocMethods {
     PerDocAportaDocElements.BotonGuardarDocumento.click();
   }
 
+  static clicOnBotonGenerarPDF() {
+    PerDocAportaDocElements.BotonGenerarPDF.click();
+  }
+
+  static clicOnBotonPresentar() {
+    PerDocAportaDocElements.BotonPresentar.click();
+  }
+
    static clicOnBotonAñadirMerito() {
     PerDocAportaDocElements.BotonAñadirMerito.click();
   }
