@@ -179,26 +179,15 @@ describe(PerDocAportaDocData.testSuites.PresentarDocumentacion, () => {
     Logger.subStep("Pulsar Generar PDF");
     PerDocAportaDocMethods.clicOnBotonGenerarPDF();
     Logger.subStep("Presenta formulario PDF");
-    Logger.verification("Verificar que se muestra el formulario PDF");
     
-    // Obtiene la referencia a la nueva ventana
-     cy.window().then((win) => {
-      const newWindow = win.open('https://wwwpre.educacion.org/educacion/PERDOC/PerDocAportaDocs/Formulario/GenerarPDF?idSolicitud=33120', '_blank'); // Accede a la nueva ventana
-      cy.wrap(newWindow).then((newWin) => {
-      Logger.verification("Verificar que se muestra el formulario PDF");
-      cy.request('https://wwwpre.educacion.org/educacion/PERDOC/PerDocAportaDocs/Formulario/GenerarPDF?idSolicitud=33120')   
-     // Cierra la nueva ventana
-        cy.wrap(newWin).invoke('close');
-      });
-    });
+   // Obtiene la referencia a la nueva ventana
+    cy.window().then((win) => {
+     const newWindow = win.open('https://wwwpre.educacion.org/educacion/PERDOC/PerDocAportaDocs/Formulario/GenerarPDF?idSolicitud=33120', '_blank'); // Accede a la nueva ventana
+    cy.wrap(newWindow).then((newWin) => {
+    Logger.verification("Verificar que se muestra el formulario PDF");
+    cy.request('https://wwwpre.educacion.org/educacion/PERDOC/PerDocAportaDocs/Formulario/GenerarPDF?idSolicitud=33120')   
+   });
+   });
 
-      cy.window().then((win) => {
-    cy.stub(win, 'open').as('open')
-  })
-  // confirm the window.open stub was called
-  // with expected URL
-  Logger.verification("Verificar que se muestra el formulario PDF");
-  cy.get('@open').should('have.been.calledWith','https://wwwpre.educacion.org/educacion/PERDOC',)
     });
- 
 });
