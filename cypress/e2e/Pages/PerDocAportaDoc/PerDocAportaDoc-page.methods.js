@@ -59,6 +59,14 @@ export class PerDocAportaDocMethods {
     PerDocAportaDocElements.BotonAñadirMerito.click();
   }
 
+  static verPantallaPresentar() {
+    PerDocAportaDocElements.BotonPantallaPresentar.should('exist');
+  }
+
+  static clicOnBotonPantallaPresentar() {
+    PerDocAportaDocElements.BotonPantallaPresentar.click();
+  }
+
    static verPantaAportacionDocumentos() {
     PerDocAportaDocElements.PantaAportacionDocumentos.should('exist');
   }

@@ -145,5 +145,8 @@ export class PerDocAportaDocElements {
         return cy.contains('h1', 'APORTACIÓN DE DOCUMENTOS');
     }
 
+     static get BotonPantallaPresentar() {
+        return cy.contains('button', 'Presentar');
+    } 
      
 }
