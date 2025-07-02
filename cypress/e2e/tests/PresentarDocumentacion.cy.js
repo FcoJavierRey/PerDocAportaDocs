@@ -237,7 +237,6 @@ describe(PerDocAportaDocData.testSuites.PresentarDocumentacion, () => {
     }
   });
     
-
     Logger.stepNumber(5);
     Logger.step("Añadir documento");
     Logger.subStep("Pulsar Añadir documento");
@@ -276,7 +275,7 @@ describe(PerDocAportaDocData.testSuites.PresentarDocumentacion, () => {
     PerDocAportaDocMethods.verPantallaPresentar(); 
     Logger.subStep("Pulsar botón Presentar");
     PerDocAportaDocMethods.clicOnBotonPantallaPresentar();
-    Logger.verification("Verificar que muestra la pantalla solicitud");
+    Logger.verification("Verificar que muestra la pantalla de solicitud");
     cy.location('pathname').should('contains', 'educacion/PERDOC/PerDocAportaDocs');
     });
 });
